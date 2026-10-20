@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jai Singh Ki Sringar Vatika</title>
+<style>
+:root{--plum:#6b174b;--rose:#d94f86;--gold:#e7b95b;--cream:#fff8f1;--ink:#321b2a;--muted:#775e6b;--line:#f0dce5}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;background:var(--cream);color:var(--ink)}
+header{background:linear-gradient(130deg,#4d1038,#8f245e 60%,#c14c7d);color:#fff;padding:24px 16px 28px;text-align:center}
+.brandmark{font-size:32px;margin-bottom:4px}
+h1{font-family:Georgia,serif;font-size:clamp(27px,5vw,44px);margin:4px 0 8px;letter-spacing:.2px}
+header p{margin:5px auto;max-width:650px;color:#ffebf3}
+.pill{display:inline-block;margin-top:12px;border:1px solid #ffffff80;border-radius:999px;padding:8px 14px;font-size:14px}
+.wrap{max-width:1080px;margin:auto;padding:20px 16px 40px}
+.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 15px;margin-bottom:18px;color:var(--muted);font-size:14px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input,select{font:inherit;border:1px solid #e5cbd7;border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink)}
+input{flex:1;min-width:190px}
+h2{font-size:23px;margin:22px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}
+.product{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #5413330a;display:flex;flex-direction:column}
+.art{height:150px;display:grid;place-items:center;font-size:64px;background:radial-gradient(circle at 50% 40%,#fff 0,#fff1f6 45%,#f6d6e4 100%);position:relative}
+.art span{filter:drop-shadow(0 5px 4px #6b174b20)}
+.tag{position:absolute;top:10px;left:10px;background:#fff9;color:var(--plum);border-radius:999px;padding:5px 9px;font-size:11px;font-weight:700}
+.info{padding:13px;display:flex;flex-direction:column;gap:7px;flex:1}
+.info h3{font-size:16px;margin:0}
+.info p{font-size:13px;color:var(--muted);margin:0;line-height:1.45}
+.price{font-weight:800;color:var(--plum);font-size:19px;margin-top:2px}
+button,.order{font:inherit;border:0;border-radius:10px;padding:10px 12px;background:var(--plum);color:white;font-weight:700;cursor:pointer;text-decoration:none;text-align:center}
+button:hover,.order:hover{background:#8a215d}
+.product .order{margin-top:auto}
+.empty{display:none;padding:24px;text-align:center;color:var(--muted)}
+.contact{margin-top:28px;padding:22px;border-radius:18px;background:#fff;border:1px solid var(--line);text-align:center}
+.contact h2{margin-top:0}
+.contact p{color:var(--muted);line-height:1.7}
+.contact .order{display:inline-block;background:#18834c;margin-top:8px}
+footer{text-align:center;padding:20px;color:var(--muted);font-size:13px}
+.small{font-size:12px;color:var(--muted)}
+@media(min-width:700px){.hero-row{display:flex;justify-content:center;gap:20px;align-items:center}.brandmark{font-size:38px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brandmark">🌸 ✨ 🌸</div>
+  <h1>Jai Singh Ki Sringar Vatika</h1>
+  <p>श्रृंगार • ब्यूटी • आपकी पसंद, आपके बजट में</p>
+  <p>मऊ, उत्तर प्रदेश</p>
+  <div class="pill">ऑनलाइन प्रोडक्ट कैटलॉग · WhatsApp ऑर्डर</div>
+</header>
+<main class="wrap">
+  <div class="notice"><strong>स्वागत है!</strong> नीचे दिए गए सामान और कीमतें वेबसाइट का नमूना दिखाने के लिए हैं। असली प्रोडक्ट, फोटो और सही कीमतें दुकान के अनुसार अपडेट करें।</div>
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="सामान खोजें… जैसे चूड़ी, बिंदी">
+    <select id="category" aria-label="श्रेणी चुनें">
+      <option value="all">सभी श्रेणियाँ</option>
+      <option value="श्रृंगार">श्रृंगार</option>
+      <option value="ब्यूटी">ब्यूटी</option>
+      <option value="गिफ्ट">गिफ्ट</option>
+    </select>
+  </div>
+  <h2>🌷 हमारे प्रोडक्ट</h2>
+  <div class="grid" id="products">
+    <article class="product" data-name="लाल चूड़ी सेट" data-category="श्रृंगार">
+      <div class="art"><span>💞</span><b class="tag">श्रृंगार</b></div>
+      <div class="info"><h3>लाल चूड़ी सेट</h3><p>पार्टी और त्योहार के लिए सुंदर चूड़ियाँ</p><div class="price">₹99 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="लाल चूड़ी सेट">WhatsApp पर पूछें</a></div>
+    </article>
+    <article class="product" data-name="बिंदी पैक" data-category="श्रृंगार">
+      <div class="art"><span>🔴</span><b class="tag">श्रृंगार</b></div>
+      <div class="info"><h3>बिंदी पैक</h3><p>रोज़ाना और खास मौकों के लिए</p><div class="price">₹30 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="बिंदी पैक">WhatsApp पर पूछें</a></div>
+    </article>
+    <article class="product" data-name="मेहंदी कोन" data-category="ब्यूटी">
+      <div class="art"><span>🌿</span><b class="tag">ब्यूटी</b></div>
+      <div class="info"><h3>मेहंदी कोन</h3><p>हाथों पर सुंदर डिज़ाइन के लिए</p><div class="price">₹25 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="मेहंदी कोन">WhatsApp पर पूछें</a></div>
+    </article>
+    <article class="product" data-name="लिपस्टिक" data-category="ब्यूटी">
+      <div class="art"><span>💄</span><b class="tag">ब्यूटी</b></div>
+      <div class="info"><h3>लिपस्टिक</h3><p>रंग और ब्रांड की उपलब्धता पूछें</p><div class="price">₹120 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="लिपस्टिक">WhatsApp पर पूछें</a></div>
+    </article>
+    <article class="product" data-name="हेयर क्लिप सेट" data-category="श्रृंगार">
+      <div class="art"><span>🎀</span><b class="tag">श्रृंगार</b></div>
+      <div class="info"><h3>हेयर क्लिप सेट</h3><p>रोज़ाना इस्तेमाल के लिए</p><div class="price">₹49 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="हेयर क्लिप सेट">WhatsApp पर पूछें</a></div>
+    </article>
+    <article class="product" data-name="गिफ्ट पैक" data-category="गिफ्ट">
+      <div class="art"><span>🎁</span><b class="tag">गिफ्ट</b></div>
+      <div class="info"><h3>गिफ्ट पैक</h3><p>खास अवसरों के लिए उपहार विकल्प</p><div class="price">₹199 <span class="small">/ नमूना कीमत</span></div><a class="order" href="#" data-product="गिफ्ट पैक">WhatsApp पर पूछें</a></div>
+    </article>
+  </div>
+  <div class="empty" id="empty">इस खोज में कोई सामान नहीं मिला। दूसरा नाम खोजें।</div>
+  <section class="contact">
+    <h2>📲 ऑर्डर या कीमत पूछें</h2>
+    <p><strong>Jai Singh Ki Sringar Vatika</strong><br>मऊ, उत्तर प्रदेश<br>WhatsApp: +91 95328 85537</p>
+    <a class="order" href="https://wa.me/919532885537?text=Namaste%2C%20mujhe%20aapke%20products%20ki%20jaankari%20chahiye." target="_blank" rel="noopener">WhatsApp पर संपर्क करें</a>
+  </section>
+</main>
+<footer>© Jai Singh Ki Sringar Vatika · ऑनलाइन कैटलॉग</footer>
+<script>
+const search = document.getElementById('search');
+const category = document.getElementById('category');
+const cards = [...document.querySelectorAll('.product')];
+function filterProducts(){
+  const q = search.value.trim().toLocaleLowerCase('hi');
+  const c = category.value;
+  let visible = 0;
+  cards.forEach(card => {
+    const match = card.dataset.name.toLocaleLowerCase('hi').includes(q) &&
+      (c === 'all' || card.dataset.category === c);
+    card.style.display = match ? 'flex' : 'none';
+    if(match) visible++;
+  });
+  document.getElementById('empty').style.display = visible ? 'none' : 'block';
+}
+search.addEventListener('input',filterProducts);
+category.addEventListener('change',filterProducts);
+document.querySelectorAll('[data-product]').forEach(link => {
+  const product = link.dataset.product;
+  const message = `Namaste, mujhe ${product} ke baare mein jaankari aur asli keemat chahiye.`;
+  link.href = `https://wa.me/919532885537?text=${encodeURIComponent(message)}`;
+  link.target = '_blank';
+  link.rel = 'noopener';
+});
+</script>
+</body>
+</html>
